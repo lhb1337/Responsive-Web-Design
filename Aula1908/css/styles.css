@@ -1,0 +1,7 @@
+.hero {
+    min-height: 100vh;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
