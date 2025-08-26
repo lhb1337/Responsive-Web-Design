@@ -23,7 +23,7 @@ function exibirProdutos(produtos) {
                         </div>
                         <div class="col-md-8 text-center text-md-start">
                             <h6>${produto.nome}</h6>
-                            <h6>${produto.preco}</h6>
+                            <h6>R$${produto.preco.toFixed(2)}</h6>
                             <p>${produto.categoria}</p>
                             <a href="" class="btn btn-success">Comprar agora</a>
                         </div>
@@ -34,6 +34,22 @@ function exibirProdutos(produtos) {
     });
 }
 
+// função para preencher o filtro de categoria
+
+function preencherCategorias() {
+    // tirando as categorias repetidas
+    const categorias = [...new Set(produtos.map(produto => produto.categoria))]
+    // colocando o array em ordem alfabetica
+    categorias.sort()
+    // preenchendo as categorias no select
+    categorias.forEach(categoria => {
+        elSelectFiltro.innerHTML += `<option value=${categoria}>${categoria}</option>`
+    })
+}
+
+
+
 // Chamando as funções
 exibirProdutos(produtos)
+preencherCategorias()
 })
