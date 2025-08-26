@@ -5,7 +5,7 @@ export const produtos = [
     categoria: "Celular",
     preco: 4999.9,
     estoque: 15,
-    imagem: '../images/imagem01.jpg',
+    imagem: './images/imagem01.jpg',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const produtos = [
     categoria: "Notebook",
     preco: 3899.0,
     estoque: 8,
-    imagem: '../images/imagem02.jpg',
+    imagem: './images/imagem02.jpg',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const produtos = [
     categoria: "Televisão",
     preco: 3499.9,
     estoque: 12,
-    imagem: '../images/imagem03.jpg',
+    imagem: './images/imagem03.jpg',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const produtos = [
     categoria: "Áudio",
     preco: 399.9,
     estoque: 25,
-    imagem: '../images/imagem04.jpg',
+    imagem: './images/imagem04.jpg',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const produtos = [
     categoria: "Games",
     preco: 4299.99,
     estoque: 6,
-    imagem: '../images/imagem05.jpg',
+    imagem: './images/imagem05.jpg',
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const produtos = [
     categoria: "Fotografia",
     preco: 2799.0,
     estoque: 4,
-    imagem: '../images/imagem06.jpg',
+    imagem: './images/imagem06.jpg',
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const produtos = [
     categoria: "Assistente Virtual",
     preco: 349.0,
     estoque: 18,
-    imagem: '../images/imagem07.jpg',
+    imagem: './images/imagem07.jpg',
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const produtos = [
     categoria: "Periféricos",
     preco: 1699.9,
     estoque: 10,
-    imagem: '../images/imagem08.jpg',
+    imagem: './images/imagem08.jpg',
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const produtos = [
     categoria: "Periféricos",
     preco: 299.9,
     estoque: 20,
-    imagem: '../images/imagem09.jpg',
+    imagem: './images/imagem09.jpg',
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ export const produtos = [
     categoria: "Drones",
     preco: 5699.0,
     estoque: 3,
-    imagem: '../images/imagem010.jpg',
+    imagem: './images/imagem010.jpg',
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ export const produtos = [
     categoria: "Tablet",
     preco: 3499.0,
     estoque: 7,
-    imagem: '../images/imagem011.jpg',
+    imagem: './images/imagem011.jpg',
   },
   {
     id: 12,
@@ -93,7 +93,7 @@ export const produtos = [
     categoria: "Wearable",
     preco: 3999.9,
     estoque: 9,
-    imagem: '../images/imagem012.jpg',
+    imagem: './images/imagem012.jpg',
   },
   {
     id: 13,
@@ -101,7 +101,7 @@ export const produtos = [
     categoria: "Áudio",
     preco: 2899.0,
     estoque: 5,
-    imagem: '../images/imagem013.jpg',
+    imagem: './images/imagem013.jpg',
   },
   {
     id: 14,
@@ -109,7 +109,7 @@ export const produtos = [
     categoria: "Games",
     preco: 4499.9,
     estoque: 8,
-    imagem: '../images/imagem014.jpg',
+    imagem: './images/imagem014.jpg',
   },
   {
     id: 15,
@@ -117,7 +117,7 @@ export const produtos = [
     categoria: "Notebook",
     preco: 8999.0,
     estoque: 4,
-    imagem: '../images/imagem015.jpg',
+    imagem: './images/imagem015.jpg',
   },
   {
     id: 16,
@@ -125,7 +125,7 @@ export const produtos = [
     categoria: "Fotografia",
     preco: 2499.0,
     estoque: 10,
-    imagem: '../images/imagem016.jpg',
+    imagem: './images/imagem016.jpg',
   },
   {
     id: 17,
@@ -133,7 +133,7 @@ export const produtos = [
     categoria: "Áudio",
     preco: 599.9,
     estoque: 16,
-    imagem: '../images/imagem017.jpg',
+    imagem: './images/imagem017.jpg',
   },
   {
     id: 18,
@@ -141,7 +141,7 @@ export const produtos = [
     categoria: "Periféricos",
     preco: 2999.9,
     estoque: 6,
-    imagem: '../images/imagem018.jpg',
+    imagem: './images/imagem018.jpg',
   },
   {
     id: 19,
@@ -149,7 +149,7 @@ export const produtos = [
     categoria: "Televisão",
     preco: 7999.9,
     estoque: 5,
-    imagem: '../images/imagem019.jpg',
+    imagem: './images/imagem019.jpg',
   },
   {
     id: 20,
@@ -157,7 +157,7 @@ export const produtos = [
     categoria: "Leitor Digital",
     preco: 699.0,
     estoque: 12,
-    imagem: '../images/imagem020.jpg',
+    imagem: './images/imagem020.jpg',
   },
   {
     id: 21,
@@ -165,7 +165,7 @@ export const produtos = [
     categoria: "Celular",
     preco: 10999.9,
     estoque: 8,
-    imagem: '../images/imagem021.jpg',
+    imagem: './images/imagem021.jpg',
   },
   {
     id: 22,
@@ -173,7 +173,7 @@ export const produtos = [
     categoria: "Tablet",
     preco: 4699.9,
     estoque: 5,
-    imagem: '../images/imagem022.jpg',
+    imagem: './images/imagem022.jpg',
   },
   {
     id: 23,
@@ -181,7 +181,7 @@ export const produtos = [
     categoria: "Games",
     preco: 2499.9,
     estoque: 9,
-    imagem: '../images/imagem023.jpg',
+    imagem: './images/imagem023.jpg',
   },
   {
     id: 24,
@@ -189,7 +189,7 @@ export const produtos = [
     categoria: "Projetores",
     preco: 3299.9,
     estoque: 4,
-    imagem: '../images/imagem024.jpg',
+    imagem: './images/imagem024.jpg',
   },
   {
     id: 25,
@@ -197,7 +197,7 @@ export const produtos = [
     categoria: "Áudio",
     preco: 1299.9,
     estoque: 11,
-    imagem: '../images/imagem025.jpg',
+    imagem: './images/imagem025.jpg',
   },
   {
     id: 26,
@@ -205,7 +205,7 @@ export const produtos = [
     categoria: "Periféricos",
     preco: 799.9,
     estoque: 15,
-    imagem: '../images/imagem026.jpg',
+    imagem: './images/imagem026.jpg',
   },
   {
     id: 27,
@@ -213,7 +213,7 @@ export const produtos = [
     categoria: "Fotografia",
     preco: 6399.0,
     estoque: 3,
-    imagem: '../images/imagem027.jpg',
+    imagem: './images/imagem027.jpg',
   },
   {
     id: 28,
@@ -221,7 +221,7 @@ export const produtos = [
     categoria: "Periféricos",
     preco: 8499.9,
     estoque: 2,
-    imagem: '../images/imagem028.jpg',
+    imagem: './images/imagem028.jpg',
   },
   {
     id: 29,
@@ -229,7 +229,7 @@ export const produtos = [
     categoria: "Televisão",
     preco: 2499.9,
     estoque: 14,
-    imagem: '../images/imagem029.jpg',
+    imagem: './images/imagem029.jpg',
   },
   {
     id: 30,
@@ -237,6 +237,6 @@ export const produtos = [
     categoria: "Wearable",
     preco: 1999.9,
     estoque: 10,
-    imagem: '../images/imagem030.jpg',
+    imagem: './images/imagem030.jpg',
   },
 ];
