@@ -9,42 +9,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const elBtnBuscar = document.querySelector('#btnBuscar')
     const elTxtBuscar = document.querySelector('#txtBuscar')
 
+    // função para exibir o grid de produtos 
 
+function exibirProdutos(produtos) {
+    produtos.forEach(produto => {
+        elMain.innerHTML += 
+            `
+             <div class="col-md-6 my-3">
+                <div class="card mb-3 p-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="${produto.imagem}" class=" w-70 rounded-start" alt=" foto do ${produto.nome}">
+                        </div>
+                        <div class="col-md-8 text-center text-md-start">
+                            <h6>${produto.nome}</h6>
+                            <h6>${produto.preco}</h6>
+                            <p>${produto.categoria}</p>
+                            <a href="" class="btn btn-success">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+             `
+    });
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Chamando as funções
+exibirProdutos(produtos)
 })
