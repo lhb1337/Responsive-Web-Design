@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de produtos</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid my-5">
+        <h1 class="display-5 py-5 px-3 bg-success text-light rounded">Produtos em estoque</h1>
+        <div class="row">
+
+            <!-- campo de busca -->
+            <div class="col-md-8 my-3 d-flex align-items-center">
+                <input type="text" id="txtBuscar" name="" class="form-control" placeholder="Digite o produto desejado"
+                    required>
+                <button class="btn btn-success ms-2" id="btnBuscar">Buscar</button>
+            </div>
+
+            <!-- campo de filtro -->
+            <div class="col-md-4 my-3">
+                <select name="filtroCategoria" id="filtroCategoria" class="form-select">
+                    <option value="todos">Todas as categorias</option>
+                </select>
+            </div>
+
+            <!-- grid de produtos - JS -->
+            <main class="my-3 p-3" id="gridProdutos"></main>
+
+
+        </div>
+    </div>
+
+
+ <script type="module" src="./js/montarFront.js"></script>   
+</body>
+
+</html>
