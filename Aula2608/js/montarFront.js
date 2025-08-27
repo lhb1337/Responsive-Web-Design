@@ -11,10 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // função para exibir o grid de produtos 
 
-function exibirProdutos(produtos) {
-    produtos.forEach(produto => {
-        elMain.innerHTML += 
+    function exibirProdutos(listaProdutos) {
+        // limpando o elemento antes de fazer uma nova busca para não acumular resultados
+        elMain.innerHTML = ''
+
+        // se nada for encontrado retornar tudo
+        if(listaProdutos.length === 0 ) {
+            elMain.innerHTML = `
+            <div class="col-12 text-center my-5">
+                <div class="alert alert-danger">
+                    <h3>Desculpe, não encontramos esse produto :( </h3>
+                </div>
+            </div>
             `
+        }
+
+        else { 
+        listaProdutos.forEach(produto => {
+            elMain.innerHTML +=
+                `
              <div class="col-md-6 my-3">
                 <div class="card mb-3 p-3">
                     <div class="row d-flex align-items-center">
@@ -31,25 +46,48 @@ function exibirProdutos(produtos) {
                 </div>
              </div> 
              `
-    });
-}
+        })};
+    }
 
-// função para preencher o filtro de categoria
+    // função para preencher o filtro de categoria
 
-function preencherCategorias() {
-    // tirando as categorias repetidas
-    const categorias = [...new Set(produtos.map(produto => produto.categoria))]
-    // colocando o array em ordem alfabetica
-    categorias.sort()
-    // preenchendo as categorias no select
-    categorias.forEach(categoria => {
-        elSelectFiltro.innerHTML += `<option value=${categoria}>${categoria}</option>`
+    function preencherCategorias() {
+        // tirando as categorias repetidas
+        const categorias = [...new Set(produtos.map(produto => produto.categoria))]
+        // colocando o array em ordem alfabetica
+        categorias.sort()
+        // preenchendo as categorias no select
+        categorias.forEach(categoria => {
+            elSelectFiltro.innerHTML += `<option value=${categoria}>${categoria}</option>`
+        })
+    }
+
+    // função para busca digitada
+    function buscarProduto() {
+        const valorBusca = elTxtBuscar.value.toLowerCase().trim()
+        
+        // Se estiver vazio - exibe todos os produtos
+        if (valorBusca === "") {
+            alert('Preencha o campo. Exibindo todos os produtos')
+            exibirProdutos(produtos)
+        }
+        
+        // caso tenhha algo preenchido iremos fazer a busca
+        else {
+            const encontrados = produtos.filter(produto => produto.nome.toLowerCase().includes(valorBusca))
+            exibirProdutos(encontrados)
+        }
+    }
+    
+
+    // Eventos
+
+    // Fazer a busca qd clicar
+
+    elBtnBuscar.addEventListener('click', buscarProduto)
+
+
+        // Chamando as funções
+        exibirProdutos(produtos)
+        preencherCategorias()
     })
-}
-
-
-
-// Chamando as funções
-exibirProdutos(produtos)
-preencherCategorias()
-})
