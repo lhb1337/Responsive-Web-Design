@@ -85,6 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fazer a busca qd clicar
 
     elBtnBuscar.addEventListener('click', buscarProduto)
+    elTxtBuscar.addEventListener('keypress', function(event){
+        if (event.key === 'Enter'){
+            buscarProduto()
+        }
+    })
 
 
         // Chamando as funções
