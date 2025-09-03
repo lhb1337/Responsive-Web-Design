@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else { 
         listaProdutos.forEach(produto => {
             elMain.innerHTML +=
-                `
+            `
              <div class="col-md-6 my-3">
                 <div class="card mb-3 p-3">
                     <div class="row d-flex align-items-center">
@@ -56,9 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const categorias = [...new Set(produtos.map(produto => produto.categoria))]
         // colocando o array em ordem alfabetica
         categorias.sort()
+        
+        
         // preenchendo as categorias no select
         categorias.forEach(categoria => {
-            elSelectFiltro.innerHTML += `<option value=${categoria}>${categoria}</option>`
+            elSelectFiltro.innerHTML += `<option value="${categoria}">${categoria}</option>`
         })
     }
 
@@ -82,11 +84,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Eventos
 
+    // Fazer a busca pela categoria selecionada
+
+    elSelectFiltro.addEventListener('change', () => {
+        const valor = elSelectFiltro.value;
+        if (valor === "todos") {
+            exibirProdutos(produtos)
+        }
+
+        else {
+            const selecionado = produtos.filter(produto => produto.categoria.toLowerCase() === valor.toLowerCase())
+            exibirProdutos(selecionado)
+        }
+    })
+
+
     // Fazer a busca qd clicar
 
     elBtnBuscar.addEventListener('click', buscarProduto)
-    elTxtBuscar.addEventListener('keypress', function(event){
-        if (event.key === 'Enter'){
+
+    // Fazer a  busca com o enter
+    elTxtBuscar.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter'){
             buscarProduto()
         }
     })
