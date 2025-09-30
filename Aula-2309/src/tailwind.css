@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-quicksand: "Quicksand", sans-serif;
+  --color-crimson-50: #fff0f2;
+  --color-crimson-100: #ffe3e4;
+  --color-crimson-200: #ffcbd1;
+  --color-crimson-300: #ffa0aa;
+  --color-crimson-400: #ff6b7e;
+  --color-crimson-500: #fb3855;
+  --color-crimson-600: #dc143c;
+  --color-crimson-700: #c50b34;
+  --color-crimson-800: #a50c33;
+  --color-crimson-900: #8d0e33;
+  --color-crimson-950: #4f0217;
+  --animate-title: title 3s ease-in-out;
+  --animate-rodando: rodando 1s ease infinite;
+}
+
+.thead-col {
+    @apply min-w-[120px] text-white text-lg font-semibold text-center px-4 py-3 hover:text-red-500;
+}
+
+.padding-tr {
+    @apply px-4 py-3;
+}
+
+@keyframes title {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    50% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes rodando {
+    0%,
+    100% {
+        rotate: 0deg;
+    }
+
+    50%{
+        rotate: 360deg;
+    }
+
+}
